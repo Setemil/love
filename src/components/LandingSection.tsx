@@ -46,11 +46,11 @@ const LandingSection = () => {
       className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100 relative overflow-hidden"
     >
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23fecdd3" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23fecdd3\" fill-opacity=\"0.1\"%3E%3Ccircle cx=\"30\" cy=\"30\" r=\"2\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
       
       <div className="text-center z-10 px-4">
         <div ref={heartRef} className="mb-8 inline-block">
-          <Heart className="w-16 h-16 text-rose-400 animate-pulse-heart" fill="currentColor" />
+          <Heart className="w-16 h-16 text-rose-400 animate-pulse" fill="currentColor" />
         </div>
         
         <h1 
@@ -71,13 +71,13 @@ const LandingSection = () => {
       </div>
 
       {/* Floating hearts decoration */}
-      <div className="absolute top-10 left-10 animate-float">
+      <div className="absolute top-10 left-10 animate-bounce">
         <Heart className="w-6 h-6 text-pink-300" fill="currentColor" />
       </div>
-      <div className="absolute top-20 right-20 animate-float" style={{ animationDelay: '1s' }}>
+      <div className="absolute top-20 right-20 animate-bounce" style={{ animationDelay: '1s' }}>
         <Heart className="w-4 h-4 text-rose-300" fill="currentColor" />
       </div>
-      <div className="absolute bottom-20 left-20 animate-float" style={{ animationDelay: '2s' }}>
+      <div className="absolute bottom-20 left-20 animate-bounce" style={{ animationDelay: '2s' }}>
         <Heart className="w-5 h-5 text-pink-400" fill="currentColor" />
       </div>
     </section>
