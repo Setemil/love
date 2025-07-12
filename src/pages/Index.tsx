@@ -1,12 +1,18 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import LandingSection from '@/components/LandingSection';
+import MemoryTimeline from '@/components/MemoryTimeline';
+import PoetrySection from '@/components/PoetrySection';
+import HeartbeatSection from '@/components/HeartbeatSection';
+import ClosingSection from '@/components/ClosingSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="font-sans">
+      <LandingSection />
+      <MemoryTimeline />
+      <PoetrySection />
+      <HeartbeatSection />
+      <ClosingSection />
     </div>
   );
 };
