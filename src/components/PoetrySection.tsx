@@ -9,9 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 const poems = [
   {
     id: 1,
-    title: "Six Months",
+    title: "The Months",
     lines: [
-      "Six months ago, you walked into my life,",
+      "Eigth months ago, you walked into my life,",
       "Like sunshine breaking through the cloudy sky.",
       "With every laugh, you chased away my strife,",
       "And taught my heart to learn to truly fly."
@@ -31,7 +31,7 @@ const poems = [
     id: 3,
     title: "Forever Beginning",
     lines: [
-      "Six months feels like a lifetime, yet a day,",
+      "Five months feels like a lifetime, yet a day,",
       "Each moment stretched like honey in the sun.",
       "I pray this feeling never fades away—",
       "Our story's only barely just begun."
@@ -132,7 +132,7 @@ const PoetrySection = () => {
                     ref={(el) => {
                       if (el) lineRefs.current[poemIndex * 4 + lineIndex] = el;
                     }}
-                    className="text-lg md:text-xl text-gray-700 text-center leading-relaxed font-medium"
+                    className="text-sm md:text-xl text-gray-700 text-center leading-relaxed font-medium"
                   >
                     {line}
                   </p>

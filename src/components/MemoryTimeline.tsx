@@ -2,7 +2,8 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Camera, MapPin, Coffee, Music } from 'lucide-react';
+import { Camera, MapPin, Coffee, Music, Clapperboard } from 'lucide-react';
+import { FaRegFaceKissBeam } from "react-icons/fa6";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,36 +19,31 @@ interface Memory {
 const memories: Memory[] = [
   {
     id: 1,
-    title: "Our First Date",
-    date: "January 15th",
-    description: "That magical evening when everything began. Coffee turned into hours of conversation, and I knew you were special.",
-    icon: Coffee,
-    color: "rose"
+    title: "Our First Kiss",
+    date: "February 13th",
+    description:
+      "That magical evening before everything began. after coutless hours of conversation, I just knew you were special.",
+    icon: FaRegFaceKissBeam,
+    color: "rose",
   },
   {
     id: 2,
-    title: "First Adventure",
-    date: "February 3rd",
-    description: "Our weekend getaway that sealed the deal. Laughing until our stomachs hurt and creating memories that still make me smile.",
-    icon: MapPin,
-    color: "pink"
+    title: "Movie Night",
+    date: "March 13th",
+    description:
+      "Witnessing Uncle bens wedding with you was one memory i will cherish for a very long time, not because of the movie but how fun it was for you to be by my side during it",
+    icon: Clapperboard,
+    color: "rose",
   },
   {
     id: 3,
-    title: "Concert Night",
-    date: "March 12th",
-    description: "Dancing under the stars, your hand in mine. The music was beautiful, but you were the real melody of my heart.",
-    icon: Music,
-    color: "rose"
+    title: "Our Nightly Walks",
+    date: "Every Nighttttttt!!!!!!!",
+    description:
+      "Every single time i get to spend even one second with you it always warms my heart because i love spending time wtih you sweetheart",
+    icon: MapPin,
+    color: "pink",
   },
-  {
-    id: 4,
-    title: "Captured Moments",
-    date: "April 8th",
-    description: "All those silly photos we took together. Each one tells a story of our growing love and endless laughter.",
-    icon: Camera,
-    color: "pink"
-  }
 ];
 
 const MemoryTimeline = () => {
@@ -91,7 +87,7 @@ const MemoryTimeline = () => {
             Our Beautiful Journey
           </h2>
           <p className="text-lg text-rose-400 max-w-2xl mx-auto">
-            Every moment with you has been a treasure. Here are some of my favorite memories from our first six months together.
+            Every moment with you has been a treasure. Here are some of my favorite memories from our first months together.
           </p>
         </div>
 
@@ -126,6 +122,7 @@ const MemoryTimeline = () => {
             );
           })}
         </div>
+        <h4 className='text-center mt-10 text-gray-400'>Heres to creating more memories with you my love 💕</h4>
       </div>
     </section>
   );

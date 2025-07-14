@@ -138,7 +138,7 @@ const HeartbeatSection = () => {
               <p className="text-gray-700 text-lg leading-relaxed">
                 In every heartbeat, in every breath, in every moment of every day, 
                 you are the rhythm that keeps me alive. You are my heart's favorite melody, 
-                and these six months have been the most beautiful song I've ever known.
+                and these five months have been the most beautiful song I've ever known.
               </p>
             </div>
           )}
